@@ -8,9 +8,8 @@ The user should be able to provide commands of the following form via the consol
 ```
 java -jar <YOUR_JAR> <CIPHER_TYPE> <CIPHER_FUNCTION> <OUTPUT_OPTIONS>
 ```
-### Cipher type
-
-We have asked you to implement four different cipher types, specified us- ing the following flags:
+## Cipher type
+We have asked you to implement four different cipher types, specified using the following flags:
 - ```--caesar <shift_param>:``` Create a new Caesar cipher with the given integer shift pa- rameter.
 - ```--random:``` Create a new monoalphabetic substitution cipher with a randomly chosen permutation of the alphabet.
 - ```--vigenere <key>:``` Create a new Vigenere cipher with the given keyword. The key- word is given as a string of maximum length 128 characters.
@@ -18,3 +17,10 @@ We have asked you to implement four different cipher types, specified us- ing th
 - ```--monoLoad <cipher_file>:``` Load a monoalphabetic substitution cipher (caesar or random) from the file specified.
 - ```--vigenereLoad <cipher_file>:``` Load a Vigenere cipher from the file specified.
 - ```--rsaLoad <file>:``` Create an RSA encrypter/decrypter from the public/private key pair stored in the file specified.
+
+## Cipher function
+At most one of the following options may also be specified by the user.
+- ```--em <message>:``` Encrypt the given string using the specified cipher scheme.
+- ```--ef <file>:``` Encryptthecontentsofthespecifiedfileusingthespecifiedcipherscheme. 
+- ```--dm <message>:``` Decrypt the given string using the specified cipher scheme.
+- ```--df <file>: ```Decryptthecontentsofthespecifiedfileusingthespecifiedcipherscheme.
