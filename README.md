@@ -33,10 +33,18 @@ Finally, the user may add as many of the following output flags as they wish.
 
 ## Examples
 1. Make a new Caesar cipher with shift parameter 15, apply it to the provided message, output the result to file encr.txt, and save the cipher to file ca15:
-```java -jar <your_jar> --caesar 15 --em "ENCrypt␣Me!" --out encr.txt --save ca15```
+```
+java -jar <your_jar> --caesar 15 --em "ENCrypt␣Me!" --out encr.txt --save ca15
+```
 2.  Loadamonoalphabeticsubstitutioncipherfromfileca15,useittodecryptthemessage in file encr.txt, and print the result to the console:
-```java -jar <your_jar> --monoLoad ca15 --df encr.txt --print```
+```
+java -jar <your_jar> --monoLoad ca15 --df encr.txt --print
+```
 3. Create an RSA encrypter/decrypter, use it to encrypt the given message, save the ci- phertext to a file encr.txt, and save the key in a file mykey.txt:
-```java -jar <your_jar> --rsa --em "rsa␣is␣alright,␣i␣guess" --out encr.txt --save mykey.txt```
+```
+java -jar <your_jar> --rsa --em "rsa␣is␣alright,␣i␣guess" --out encr.txt --save mykey.txt
+```
 4.  Load an RSA key from a file mykey.txt, use it to decrypt the ciphertext in the file encr.txt, print the resulting plaintext, and also save the plaintext to a file decr.txt:
-```java -jar <your_jar> --rsaLoad myKey.txt --df encr.txt --out decr.txt --print```
+```
+java -jar <your_jar> --rsaLoad myKey.txt --df encr.txt --out decr.txt --print
+```
