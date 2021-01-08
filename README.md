@@ -11,10 +11,10 @@ java -jar <YOUR_JAR> <CIPHER_TYPE> <CIPHER_FUNCTION> <OUTPUT_OPTIONS>
 ### Cipher type
 
 We have asked you to implement four different cipher types, specified us- ing the following flags:
-• ```--caesar <shift_param>:``` Create a new Caesar cipher with the given integer shift pa- rameter.
-• ```--random:``` Create a new monoalphabetic substitution cipher with a randomly chosen permutation of the alphabet.
-• ```--vigenere <key>:``` Create a new Vigene`re cipher with the given keyword. The key- word is given as a string of maximum length 128 characters.
-• ```--rsa:``` Create a new RSA cipher.
-• ```--monoLoad <cipher_file>:``` Load a monoalphabetic substitution cipher (caesar or random) from the file specified.
-• ```--vigenereLoad <cipher_file>:``` Load a Vigene`re cipher from the file specified.
-• ```--rsaLoad <file>:``` Create an RSA encrypter/decrypter from the public/private key pair stored in the file specified.
+- ```--caesar <shift_param>:``` Create a new Caesar cipher with the given integer shift pa- rameter.
+- ```--random:``` Create a new monoalphabetic substitution cipher with a randomly chosen permutation of the alphabet.
+- ```--vigenere <key>:``` Create a new Vigenere cipher with the given keyword. The key- word is given as a string of maximum length 128 characters.
+- ```--rsa:``` Create a new RSA cipher.
+- ```--monoLoad <cipher_file>:``` Load a monoalphabetic substitution cipher (caesar or random) from the file specified.
+- ```--vigenereLoad <cipher_file>:``` Load a Vigenere cipher from the file specified.
+- ```--rsaLoad <file>:``` Create an RSA encrypter/decrypter from the public/private key pair stored in the file specified.
