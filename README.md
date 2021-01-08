@@ -9,7 +9,7 @@ The user should be able to provide commands of the following form via the consol
 java -jar <YOUR_JAR> <CIPHER_TYPE> <CIPHER_FUNCTION> <OUTPUT_OPTIONS>
 ```
 ## Cipher type
-We have asked you to implement four different cipher types, specified using the following flags:
+The user can specify the type of ciphers using the following flags: 
 - ```--caesar <shift_param>:``` Create a new Caesar cipher with the given integer shift pa- rameter.
 - ```--random:``` Create a new monoalphabetic substitution cipher with a randomly chosen permutation of the alphabet.
 - ```--vigenere <key>:``` Create a new Vigenere cipher with the given keyword. The key- word is given as a string of maximum length 128 characters.
@@ -24,3 +24,9 @@ At most one of the following options may also be specified by the user.
 - ```--ef <file>:``` Encryptthecontentsofthespecifiedfileusingthespecifiedcipherscheme. 
 - ```--dm <message>:``` Decrypt the given string using the specified cipher scheme.
 - ```--df <file>: ```Decryptthecontentsofthespecifiedfileusingthespecifiedcipherscheme.
+
+## Output options
+Finally, the user may add as many of the following output flags as they wish.
+- ```--print:``` Print the result of applying the cipher (if any) to the console.
+- ```--out <file>:``` Print the result of applying the cipher (if any) to the specified file. 
+- ```--save <file>:``` Save the current cipher to the specified file.
